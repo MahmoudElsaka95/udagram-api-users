@@ -14,7 +14,7 @@ before_script:
   - echo "no tests"
 
 script:
-  - cd \udagram-api-user
+  - cd \udagram-api-users
   - docker --version # print the version for logging
   - docker build -t user-node .
   - docker tag user-node "$DOCKER_USERNAME"/user-node:latest
